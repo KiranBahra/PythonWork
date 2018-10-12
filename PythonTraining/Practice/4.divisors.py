@@ -5,4 +5,11 @@ varInp= input("Please enter a number:")
 varInp =int(varInp)
 
 #have a list, the limit of the list is the user input
-x=range(0)
+listRange = list(range(1,varInp+1))
+divisorList = []
+
+for number in listRange:
+	if varInp % number ==0:
+		divisorList.append(number)
+
+print(divisorList)
